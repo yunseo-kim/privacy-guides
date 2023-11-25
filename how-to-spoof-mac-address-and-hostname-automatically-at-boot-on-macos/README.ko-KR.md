@@ -21,7 +21,7 @@ Pinned:
 
 - macOS Catalina 혹은 그 이후 버전을 구동하는 컴퓨터
 
-update-korean-first-names 스크립트를 직접 실행할 경우, 다음 사항들을 추가로 충족해야 합니다.
+[update-korean-first-names.sh](./misc/update-korean-first-names.sh) 스크립트를 직접 실행할 경우, 다음 사항들을 추가로 충족해야 합니다.
 - Python3 및 다음 라이브러리
   - requests
   - bs4 (BeautifulsSoup)
@@ -205,12 +205,12 @@ sudo defaults delete com.apple.loginwindow LogoutHook
 
 ### 3단계: 컴퓨터 이름과 로컬 호스트 이름, 호스트 이름 설정
 
-> 주의: `Yunseo` 위치에 본인 이름을 넣으세요.
+> 주의: `Yunseo` 또는 `yunseo` 위치에 본인 이름을 넣으세요.
 
 ```shell
 sudo scutil --set ComputerName "Yunseo의 MacBook Air"
-sudo scutil --set LocalHostName "Yunseoui-MacBookAir"
-sudo scutil --set HostName "Yunseoui-MacBookAir"
+sudo scutil --set LocalHostName "yunseoui-MacBookAir"
+sudo scutil --set HostName "yunseoui-MacBookAir"
 ```
 
 ### 4단계: 재부팅
